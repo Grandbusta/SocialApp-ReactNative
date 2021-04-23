@@ -10,7 +10,7 @@ import SearchHeader from '../shared/searchHeader'
 const Tab = createMaterialTopTabNavigator();
 const Stack = createStackNavigator()
 
-const screenTabs = ()=>(
+const screenTabs =()=>(
   <Tab.Navigator>
       <Tab.Screen name="Messages" component={Messages} />
       <Tab.Screen name="Groups" component={Groups} />
