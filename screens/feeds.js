@@ -14,23 +14,25 @@ export default function Feeds({navigation}) {
             key:'1',
             username:'grandbusta',
             time:'2 min ago',
-            url:busta
+            url:busta,
+            caption:'This is the day i have been waiting for like one of the best day of our life we have to keep up with'
         },
         {
             key:'2',
             username:'olamide',
             time:'23 min ago',
-            url:beauty
+            url:beauty,
+            caption:'This is the day i have been waiting for like one of the best day of our life we have to keep up with'
         }
     ]
     return(
         <View style={{backgroundColor:'white'}}>
             <CustomHeader title='Social'/>
                 <FlatList
-                contentContainerStyle={{ paddingBottom: 100 }}
+                contentContainerStyle={{ paddingBottom: 150 }}
                     data={data}
                     renderItem={({item})=>(
-                        <FeedCard username={item.username} time={item.time} url={item.url}/>
+                        <FeedCard username={item.username} time={item.time} url={item.url} caption={item.caption}/>
                     )}
                 />
         </View>

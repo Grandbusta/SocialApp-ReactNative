@@ -98,7 +98,7 @@ export default function People({navigation}) {
         <View style={{backgroundColor:'white'}}>
           <SearchHeader/>
           <FlatList
-          contentContainerStyle={{ paddingBottom:100 }}
+          contentContainerStyle={{ paddingBottom:150 }}
           data={data}
           renderItem={({item})=>(
             <View style={styles.info}>

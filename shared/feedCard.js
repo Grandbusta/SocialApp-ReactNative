@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView,Image, FlatList, TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function FeedCard({navigation,username,time,url}) {
+export default function FeedCard({caption,username,time,url}) {
     return(
             <View style={styles.singleCard}>
                 <View style={styles.postInfo}>
@@ -36,9 +36,9 @@ export default function FeedCard({navigation,username,time,url}) {
                 </View>
                 <View>
                     <Text style={styles.captionCamp}>
-                        <Text style={styles.captionUsername}>grandbusta </Text>
+                        <Text style={styles.captionUsername}>{username} </Text>
                         <Text style={styles.captionText}>
-                            This is the day i have been waiting for like one of the best day of our life we have to keep up with
+                            {caption}
                         </Text>
                     </Text>
                 </View>
@@ -64,7 +64,8 @@ const styles= StyleSheet.create({
         fontSize:16,
     },
     captionCamp:{
-        marginHorizontal:20,
+        marginLeft:10,
+        marginRight:30,
         marginTop:5,
         marginBottom:25
     },
@@ -89,7 +90,7 @@ const styles= StyleSheet.create({
         alignSelf:'center'
     },
     activityinfo:{
-        marginHorizontal:20,
+        marginHorizontal:10,
         marginVertical:10,
         flexDirection:'row',
         alignItems:'center'

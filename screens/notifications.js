@@ -89,7 +89,7 @@ export default function Notifications({navigation}) {
         <View style={{backgroundColor:'white'}}>
             <CustomHeader title='Notifications'/>
             <FlatList
-            contentContainerStyle={{ paddingBottom: 100 }}
+            contentContainerStyle={{ paddingBottom: 150 }}
             data={data}
             renderItem={({item})=>(
               <TouchableOpacity>
