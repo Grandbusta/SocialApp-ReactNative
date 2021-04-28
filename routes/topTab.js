@@ -6,9 +6,12 @@ import { Ionicons } from '@expo/vector-icons'
 import Messages from '../screens/messages'
 import Groups from '../screens/groups'
 import SearchHeader from '../shared/searchHeader'
+import SingleChat from '../screens/chat'
+import CustomHeader from '../shared/header'
 
 const Tab = createMaterialTopTabNavigator();
 const Stack = createStackNavigator()
+
 
 const screenTabs =()=>(
   <Tab.Navigator>
@@ -25,7 +28,8 @@ export default function TopTab() {
           cardStyle:{backgroundColor:'white'}
       }}
       >
-        <Stack.Screen name='Chats' component={screenTabs}/>
+        <Stack.Screen name='Chats' component={screenTabs} />
+        <Stack.Screen name='Single Chat' component={SingleChat} options={{header:()=><CustomHeader title='Chat'/>}}/>
       </Stack.Navigator>
   );
 }

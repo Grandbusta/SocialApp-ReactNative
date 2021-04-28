@@ -108,7 +108,7 @@ const data=[
       contentContainerStyle={{ paddingBottom:100 }}
       data={data}
       renderItem={({item})=>(
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>{navigation.navigate('Single Chat')}}>
           <View style={styles.info}>
             <TouchableOpacity>
               <Image
