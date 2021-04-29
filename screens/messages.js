@@ -103,7 +103,7 @@ const data=[
     },
   ]
   return(
-    <View style={{backgroundColor:'white'}}>
+    <View style={{backgroundColor:'white',flex:1}}>
         <FlatList
       contentContainerStyle={{ paddingBottom:100 }}
       data={data}

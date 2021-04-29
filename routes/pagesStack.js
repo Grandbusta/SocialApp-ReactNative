@@ -22,7 +22,7 @@ export default function PageStack() {
               iconName=focused?'notifications-sharp':'notifications-outline'
             }else if(route.name==='Personal Profile'){
               iconName=focused?'person':'person-outline'
-            }else if(route.name==='Messages'){
+            }else if(route.name==='Messaging'){
               iconName=focused?'mail':'mail-outline'
             }else if(route.name==='People'){
               iconName=focused?'people-sharp':'people-outline'
@@ -37,7 +37,7 @@ export default function PageStack() {
         <Tab.Screen name="Feeds" component={Feeds}/>
         <Tab.Screen name="People" component={People} />
         <Tab.Screen name="Notifications" component={Notifications} />
-        <Tab.Screen name="Messages" component={TopTab}/>
+        <Tab.Screen name="Messaging" component={TopTab}/>
         <Tab.Screen name="Personal Profile" component={PersonalProfile} />
       </Tab.Navigator>
   );

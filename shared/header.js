@@ -1,8 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView, FlatList, TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native';
+import { StyleSheet, Text, View} from 'react-native';
 import { AntDesign,FontAwesome,Feather } from '@expo/vector-icons'
-import { Formik } from 'formik'
-import globalStyles from '../shared/globalStyles'
 
 export default function Header({title}) {
     return(
