@@ -9,9 +9,9 @@ export default function Main({ navigation }) {
         style={styles.illustration}
         source={require('../assets/Images/illustration.png')}
       />
-      <Text style={styles.title}>Connect with Developers!</Text>
+      <Text style={styles.title}>Connect with passion!</Text>
       <Text style={{...styles.text,marginTop:10,fontSize:24}}>
-        Welcome to the largest platform where you can get to chat with the best developers around the world and share your work.
+        Welcome to the largest social platform. Follow your passion and connect with your hobby. 
       </Text>
       <TouchableOpacity
       style={styles.btn}
@@ -22,7 +22,7 @@ export default function Main({ navigation }) {
         <Text style={{...styles.text,fontSize:20}}>Already have an account?</Text>
         <TouchableOpacity>
           <Text 
-          style={{...styles.text,color:'#0000CD',fontWeight:"bold",paddingLeft:4,fontSize:20}}
+          style={{...styles.text,color:'#1DA1F2',fontWeight:"bold",paddingLeft:4,fontSize:20}}
           onPress={()=>{navigation.navigate('Sign In')}}
           >Sign in</Text>
         </TouchableOpacity>
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     textAlign:'center',
   },
   btnText: {
-    backgroundColor:'#0000CD',
+    backgroundColor:'#1DA1F2',
     color:'white',
     fontWeight:'bold',
     fontSize:20,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView,Image, FlatList, TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native';
+import { StyleSheet, Text, View, Image} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function FeedCard({caption,username,time,url}) {

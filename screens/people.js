@@ -1,20 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity,Image, ScrollView, FlatList, TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native';
-import { AntDesign,FontAwesome,Feather } from '@expo/vector-icons'
-import { Formik } from 'formik'
-import globalStyles from '../shared/globalStyles'
+import { StyleSheet, Text, View, TouchableOpacity,Image, FlatList} from 'react-native';
 import SearchHeader from '../shared/searchHeader'
+import { img,img2,img3,img4,img5,img6,img7,img8 } from '../shared/images'
 
-const img=require('../assets/Images/grandpost.jpeg')
-const img2 = require('../assets/Images/profileimg.jpg')
-const img3 = require('../assets/Images/img.jpg')
-const img4 = require('../assets/Images/afri.jpg')
-const img5 = require('../assets/Images/sit.jpg')
-const img6 = require('../assets/Images/gele.jpg')
-const img7 = require('../assets/Images/jide.jpg')
-const img8 = require('../assets/Images/busta.jpeg')
 
-export default function People({navigation}) {
+export default function People() {
   const data=[
     {
       key:'1',
@@ -151,7 +141,7 @@ const styles = StyleSheet.create({
     fontSize:18,
   },
   flbtnFalse:{
-    backgroundColor:'#0000CD',
+    backgroundColor:'#1DA1F2',
     paddingVertical:10,
     borderRadius:10,
     width:'20%'

@@ -3,9 +3,8 @@ import { StyleSheet, Text, View, TouchableOpacity, ScrollView,Image, FlatList, T
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { Formik } from 'formik'
 import ChatHeader from '../shared/chatHeader'
-const img=require('../assets/Images/grandpost.jpeg')
 
-export default function Chat({navigation}) {
+export default function Chat({navigation,route}) {
   const data=[
     {
       key:'1',
@@ -71,7 +70,7 @@ export default function Chat({navigation}) {
   return(
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
     <View style={styles.chatView}>
-      <ChatHeader navigation={navigation}/>
+      <ChatHeader navigation={navigation} user={route.params.user}/>
       <View style={styles.msgBox}>
         <FlatList
         contentContainerStyle={{paddingBottom:250}}
@@ -86,7 +85,7 @@ export default function Chat({navigation}) {
       </View>
       <View style={styles.chatSect}>
         <View>
-          <Ionicons name="add-circle-outline" size={40} color="#0000CD" />
+          <Ionicons name="add-sharp" size={40} color="#1DA1F2" />
         </View>
         <Formik initialValues={{chat:''}}>
           {({handleChange,values})=>(
@@ -102,7 +101,7 @@ export default function Chat({navigation}) {
           )}
         </Formik>
         <View>
-          <MaterialCommunityIcons name="send-circle" size={54} color="#0000CD" />
+          <MaterialCommunityIcons name="send-circle" size={54} color="#1DA1F2" />
         </View>
       </View>
     </View>
@@ -140,7 +139,7 @@ const styles=StyleSheet.create({
     borderTopLeftRadius:10,
     borderBottomLeftRadius:10,
     borderTopRightRadius:10,
-    backgroundColor:'#0000CD',
+    backgroundColor:'#1DA1F2',
     paddingHorizontal:15,
     paddingVertical:10,
     maxWidth:'70%',
@@ -151,7 +150,7 @@ const styles=StyleSheet.create({
     borderTopLeftRadius:10,
     borderBottomRightRadius:10,
     borderTopRightRadius:10,
-    backgroundColor:'#000080',
+    backgroundColor:'#657786',
     paddingHorizontal:15,
     paddingVertical:10,
     maxWidth:'70%',
@@ -164,7 +163,6 @@ const styles=StyleSheet.create({
   },
   msgBox:{
     height:'100%',
-    paddingTop:10,
-    marginHorizontal:10
+    paddingHorizontal:10
   }
 })

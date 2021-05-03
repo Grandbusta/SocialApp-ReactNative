@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View} from 'react-native';
-import { AntDesign,FontAwesome,Feather } from '@expo/vector-icons'
 
 export default function Header({title}) {
     return(

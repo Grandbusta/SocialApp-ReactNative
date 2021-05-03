@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView, FlatList, TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native';
+import { Text, View, TouchableOpacity, TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native';
 import { AntDesign,FontAwesome,Feather } from '@expo/vector-icons'
 import { Formik } from 'formik'
 import globalStyles from '../shared/globalStyles'
@@ -64,7 +64,7 @@ export default function SignIn({navigation}) {
           <Text style={{...globalStyles.text,fontSize:20}}>Dont have any account?</Text>
           <TouchableOpacity>
             <Text 
-            style={{...globalStyles.text,color:'#0000CD',fontWeight:"bold",paddingLeft:4,fontSize:20}}
+            style={{...globalStyles.text,color:'#1DA1F2',fontWeight:"bold",paddingLeft:4,fontSize:20}}
             onPress={()=>{navigation.navigate('Sign Up')}}
             >Sign Up</Text>
           </TouchableOpacity>

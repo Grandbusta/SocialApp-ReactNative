@@ -22,7 +22,7 @@ const globalStyles = StyleSheet.create({
     textAlign:'center',
   },
   btnText: {
-    backgroundColor:'#0000CD',
+    backgroundColor:'#1DA1F2',
     color:'white',
     fontWeight:'bold',
     fontSize:20,

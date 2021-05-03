@@ -1,14 +1,14 @@
 import React,{useState} from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView, FlatList, TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native';
+import { StyleSheet, View, TextInput,Keyboard} from 'react-native';
 import { Ionicons } from '@expo/vector-icons'
 import { Formik } from 'formik'
 
-export default function SearchHeader({title}) {
+export default function SearchHeader() {
   const [blur,setBlur]=useState(true)
   return(
     <View style={styles.box}>
         <Formik initialValues={{search:''}}>
-          {({handleChange,values,handleBlur})=>(
+          {({handleChange,values})=>(
             <View style={styles.searchView}>
                 {!blur&&(
                   <View style={styles.icon}>

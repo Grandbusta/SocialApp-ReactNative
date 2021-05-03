@@ -1,16 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView, FlatList, TextInput,Image,TouchableWithoutFeedback,Keyboard} from 'react-native';
-import { AntDesign,FontAwesome,Feather } from '@expo/vector-icons'
-import { Formik } from 'formik'
-import SearchHeader from '../shared/searchHeader'
-const img=require('../assets/Images/grandpost.jpeg')
-const img2 = require('../assets/Images/profileimg.jpg')
-const img3 = require('../assets/Images/img.jpg')
-const img4 = require('../assets/Images/afri.jpg')
-const img5 = require('../assets/Images/sit.jpg')
-const img6 = require('../assets/Images/gele.jpg')
-const img7 = require('../assets/Images/jide.jpg')
-const img8 = require('../assets/Images/busta.jpeg')
+import { StyleSheet, Text, View, TouchableOpacity, FlatList, Image} from 'react-native';
+import { img,img2,img3,img4,img5,img6,img7,img8 } from '../shared/images'
 
 export default function Groups({navigation}) {
 const data=[

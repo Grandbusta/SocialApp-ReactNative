@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons'
 import Feeds from '../screens/feeds'
@@ -31,6 +30,7 @@ export default function PageStack() {
           },
         })}
         tabBarOptions={{
+          activeTintColor:'#1DA1F2',
           showLabel:false
         }}
       >
