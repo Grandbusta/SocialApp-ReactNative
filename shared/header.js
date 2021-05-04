@@ -11,12 +11,11 @@ export default function Header({title}) {
 
 const styles =  StyleSheet.create({
     box:{
-        paddingTop:50,
-        paddingBottom:20,
+        paddingBottom:'2%',
         elevation:1
     },
     headerText:{
-        fontSize:28,
+        fontSize:26,
         textAlign:'center',
         fontWeight:'bold'
     }

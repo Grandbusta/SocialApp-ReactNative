@@ -3,6 +3,7 @@ import { StyleSheet,Image, Text, View, TouchableOpacity, ScrollView} from 'react
 import { Ionicons } from '@expo/vector-icons'
 import CustomHeader from '../shared/header'
 import { img,img2,img3,img4,img5,img6,img7,img8 } from '../shared/images'
+import {ScaledSheet} from 'react-native-size-matters'
 
 
 export default function PersonalProfile({navigation}) {
@@ -146,10 +147,10 @@ export default function PersonalProfile({navigation}) {
   )
 }
 
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
   proView:{
-    marginHorizontal:20,
-    marginTop:20
+    marginHorizontal:'3%',
+    marginTop:'2%'
   },
   details:{
       flexDirection:'row',
@@ -158,38 +159,38 @@ const styles = StyleSheet.create({
   },
   userPicture:{
       borderRadius:50,
-      width:100,
-      height:100
+      width:90,
+      height:90
   },
   info:{
-      marginLeft:20,
+      marginLeft:'2%',
       flexDirection:'row',
       alignItems:'center',
       justifyContent:'space-between',
       flexGrow:1
   },
   numView:{
-      padding:10
+      padding:'8@s'
   },
   infoNum:{
-      fontSize:24,
+      fontSize:'18@s',
       textAlign:'center'
   },
   infoType:{
-      fontSize:16
+      fontSize:'12@s'
   },
   username:{
       fontWeight:'bold',
       fontSize:28
   },
   status:{
-    fontSize:18,
+    fontSize:'16@s',
     marginTop:5,
     paddingRight:30
   },
   locale:{
     flexDirection:'row',
-    marginRight:14
+    marginRight:'2%'
   },
   location:{
     fontSize:15,
@@ -197,8 +198,9 @@ const styles = StyleSheet.create({
     color:'#686868'
   },
   personal:{
-    marginTop:12,
-    flexDirection:'row'
+    marginTop:'2%',
+    flexDirection:'row',
+    flexWrap:'wrap'
   },
   posts:{
     marginTop:50,

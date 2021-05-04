@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity,Image, FlatList} from 'react-native';
 import SearchHeader from '../shared/searchHeader'
 import { img,img2,img3,img4,img5,img6,img7,img8 } from '../shared/images'
-
+import {ScaledSheet} from 'react-native-size-matters'
 
 export default function People() {
   const data=[
@@ -114,10 +114,10 @@ export default function People() {
     )
 }
 
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
   info:{
     flexDirection:'row',
-    marginHorizontal:20,
+    marginHorizontal:'3%',
     alignItems:'center',
     justifyContent:'space-between',
     marginVertical:10,
@@ -127,34 +127,37 @@ const styles = StyleSheet.create({
   },
   infoImg:{
     borderRadius:50,
-    width:70,
-    height:70
+    width:'60@s',
+    height:'60@s'
   },
   infoText:{
-    width:'60%'
+    width:'60%',
+    paddingHorizontal:5
   },
   username:{
-    fontSize:22,
+    fontSize:'18@ms',
     fontWeight:'bold'
   },
   caption:{
-    fontSize:18,
+    fontSize:'16@ms',
   },
   flbtnFalse:{
     backgroundColor:'#1DA1F2',
     paddingVertical:10,
+    paddingHorizontal:'1%',
     borderRadius:10,
     width:'20%'
   },
   flbtnTrue:{
     backgroundColor:'grey',
     paddingVertical:10,
+    paddingHorizontal:'1%',
     borderRadius:10,
     width:'20%'
   },
   btnText:{
     color:'white',
-    fontSize:16,
+    fontSize:'16@ms',
     fontWeight:'bold',
     textAlign:'center',
   }

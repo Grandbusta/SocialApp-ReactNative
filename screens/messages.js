@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, FlatList,Image} from 'react-native';
 import { img,img2,img3,img4,img5,img6,img7,img8 } from '../shared/images'
+import {ScaledSheet} from 'react-native-size-matters'
 
 export default function Messages({navigation}) {
 const data=[
@@ -123,10 +124,10 @@ const data=[
   )
 }
 
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
   info:{
     flexDirection:'row',
-    marginHorizontal:20,
+    marginHorizontal:'3%',
     alignItems:'center',
     justifyContent:'space-between',
     marginVertical:10,
@@ -136,18 +137,19 @@ const styles = StyleSheet.create({
   },
   infoImg:{
     borderRadius:50,
-    width:70,
-    height:70
+    width:'60@ms',
+    height:'60@ms'
   },
   infoText:{
-    width:'60%'
+    width:'60%',
+    paddingHorizontal:5
   },
   username:{
-    fontSize:22,
+    fontSize:'20@ms',
     fontWeight:'bold'
   },
   caption:{
-    fontSize:18,
+    fontSize:'16@ms',
   },
   infoTime:{
     color:'grey'

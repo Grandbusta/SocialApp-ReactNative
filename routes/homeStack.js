@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack'
-import { NavigationContainer } from '@react-navigation/native'
+import { NavigationContainer,DefaultTheme } from '@react-navigation/native'
 import Main from '../screens/main'
 import SignIn from '../screens/signIn'
 import SignUp from '../screens/signUp'
@@ -11,7 +11,7 @@ const Stack = createStackNavigator()
 
 export default function HomeStack() {
   return(
-    <NavigationContainer>
+    <NavigationContainer theme={{...DefaultTheme,colors:{...DefaultTheme.colors,background:'white'}}}>
       <Stack.Navigator
       initialRouteName='Main'
       mode='modal'

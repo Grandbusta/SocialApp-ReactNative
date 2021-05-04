@@ -1,11 +1,12 @@
 import { StyleSheet } from 'react-native';
+import { ScaledSheet } from 'react-native-size-matters'
 
-const globalStyles = StyleSheet.create({
+const globalStyles = ScaledSheet.create({
     container: {
     flex:1,
-    padding:20,
+    padding:'3%',
     alignItems:'center',
-    backgroundColor:'white'
+    backgroundColor:'red'
   },
   illustration: {
     width:'100%',
@@ -25,31 +26,34 @@ const globalStyles = StyleSheet.create({
     backgroundColor:'#1DA1F2',
     color:'white',
     fontWeight:'bold',
-    fontSize:20,
-    paddingVertical:30,
-    paddingHorizontal:30,
+    fontSize:'20@s',
+    paddingVertical:'20@vs',
+    paddingHorizontal:'30@ms',
     textAlign:'center',
     borderRadius:20
   },
   btn: {
     width:'100%',
-    marginVertical:20
+    marginVertical:'20@vs'
   },
   sign: {
     flexDirection:'row',
-    alignItems:'center'
+    textAlign:'center',
+    flexWrap:'wrap',
+    alignItems:'center',
+    justifyContent:'center'
   },
   sview:{
     width:'100%',
-    marginVertical:30
+    marginVertical:'4%'
   },
   stext: {
-    fontSize:18
+    fontSize:'18@s'
   },
   iconbtn: {
-    marginTop:20,
-    paddingVertical:30,
-    paddingHorizontal:100,
+    marginTop:'2%',
+    paddingVertical:'5%',
+    paddingHorizontal:'20%',
     backgroundColor:'#F8F8F8',
     borderRadius:20,
     alignSelf:'center'
@@ -60,10 +64,10 @@ const globalStyles = StyleSheet.create({
   },
   textinput:{
     backgroundColor:'#F5F5F5',
-    marginVertical:20,
-    paddingVertical:30,
-    paddingHorizontal:25,
-    fontSize:25,
+    marginVertical:'3%',
+    paddingVertical:'20@ms',
+    paddingHorizontal:'5%',
+    fontSize:'20@ms',
     borderRadius:10
   },
 })

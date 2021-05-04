@@ -45,8 +45,7 @@ export default function SearchHeader() {
 
 const styles =  StyleSheet.create({
     box:{
-        paddingTop:60,
-        paddingBottom:20,
+        paddingBottom:'2%',
         paddingHorizontal:15
     },
     searchView:{

@@ -1,16 +1,19 @@
 import 'react-native-gesture-handler'
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
+import { StyleSheet,ScrollView,StatusBar, Text, View, TouchableOpacity, Image} from 'react-native';
+import { ScaledSheet,scale } from 'react-native-size-matters'
 
 export default function Main({ navigation }) {
   return (
-    <View style={styles.container}>
+    <View style={{flex:1}}>
+      <StatusBar backgroundColor='white'/>
+      <ScrollView contentContainerStyle={styles.container}>
       <Image
         style={styles.illustration}
         source={require('../assets/Images/illustration.png')}
       />
       <Text style={styles.title}>Connect with passion!</Text>
-      <Text style={{...styles.text,marginTop:10,fontSize:24}}>
+      <Text style={{...styles.text,marginTop:'1%',fontSize:scale(18)}}>
         Welcome to the largest social platform. Follow your passion and connect with your hobby. 
       </Text>
       <TouchableOpacity
@@ -19,7 +22,7 @@ export default function Main({ navigation }) {
         <Text style={styles.btnText}>Create an account</Text>
       </TouchableOpacity>
       <View style={styles.sign}>
-        <Text style={{...styles.text,fontSize:20}}>Already have an account?</Text>
+        <Text style={{...styles.text,fontSize:scale(16)}}>Already have an account?</Text>
         <TouchableOpacity>
           <Text 
           style={{...styles.text,color:'#1DA1F2',fontWeight:"bold",paddingLeft:4,fontSize:20}}
@@ -27,26 +30,30 @@ export default function Main({ navigation }) {
           >Sign in</Text>
         </TouchableOpacity>
       </View>
-    </View>
+      </ScrollView>
+  </View>
   );
 }
 
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
   container: {
     flex:1,
-    padding:20,
-    backgroundColor:'white',
+    padding:'5%',
     alignItems:'center',
-    backgroundColor:'white'
+    backgroundColor:'white',
+    justifyContent:'center'
   },
   illustration: {
     width:'100%',
-    resizeMode:'contain'
+    resizeMode:'contain',
+    height:'40%',
+    marginBottom:'2%'
   },
   title:{
-    fontSize:35,
+    fontSize:'26@ms',
     alignSelf:'center',
-    fontWeight:'bold'
+    fontWeight:'bold',
+    textAlign:'center'
   },
   text: {
     color:'grey',
@@ -57,18 +64,20 @@ const styles = StyleSheet.create({
     backgroundColor:'#1DA1F2',
     color:'white',
     fontWeight:'bold',
-    fontSize:20,
-    paddingVertical:30,
-    paddingHorizontal:30,
+    fontSize:'22@ms',
+    paddingVertical:'6%',
     textAlign:'center',
     borderRadius:20
   },
   btn: {
     width:'100%',
-    marginVertical:20
+    marginVertical:'3%'
   },
   sign: {
     flexDirection:'row',
-    alignItems:'center'
+    textAlign:'center',
+    flexWrap:'wrap',
+    alignItems:'center',
+    justifyContent:'center'
   }
 })

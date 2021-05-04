@@ -1,14 +1,15 @@
 import React from 'react';
-import { Text, View, TouchableOpacity, TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native';
+import { Text, View,ScrollView, TouchableOpacity, TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native';
 import { AntDesign,FontAwesome,Feather } from '@expo/vector-icons'
 import { Formik } from 'formik'
 import globalStyles from '../shared/globalStyles'
+import { scale } from 'react-native-size-matters'
 
 
 export default function SignUp({navigation}) {
     return(
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-    <View style={globalStyles.container}>
+    <ScrollView contentContainerStyle={{paddingBottom:100,paddingHorizontal:'4%',alignItems:'center',backgroundColor:'white'}}>
       <View style={globalStyles.sview}>
         <Text style={globalStyles.stext}>Sign up with just one step</Text>
         <View style={globalStyles.socialview}>
@@ -71,12 +72,12 @@ export default function SignUp({navigation}) {
           <Text style={{...globalStyles.text,fontSize:20}}>Already have an account?</Text>
           <TouchableOpacity>
             <Text 
-            style={{...globalStyles.text,color:'#1DA1F2',fontWeight:"bold",paddingLeft:4,fontSize:20}}
+            style={{...globalStyles.text,color:'#1DA1F2',fontWeight:"bold",paddingLeft:4,fontSize:scale(20)}}
             onPress={()=>{navigation.navigate('Sign In')}}
             >Sign in</Text>
           </TouchableOpacity>
         </View>
-      </View>
+    </ScrollView>
     </TouchableWithoutFeedback>
     )
 }

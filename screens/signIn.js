@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TouchableOpacity, TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native';
+import { Text, View,ScrollView, TouchableOpacity, TextInput,TouchableWithoutFeedback,Keyboard} from 'react-native';
 import { AntDesign,FontAwesome,Feather } from '@expo/vector-icons'
 import { Formik } from 'formik'
 import globalStyles from '../shared/globalStyles'
@@ -7,7 +7,8 @@ import globalStyles from '../shared/globalStyles'
 export default function SignIn({navigation}) {
     return(
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-    <View style={globalStyles.container}>
+      <ScrollView contentContainerStyle={{paddingBottom:100,paddingHorizontal:'4%',alignItems:'center',backgroundColor:'white'}}>
+
       <View style={globalStyles.sview}>
         <Text style={globalStyles.stext}>Sign in with just one step</Text>
         <View style={globalStyles.socialview}>
@@ -69,7 +70,7 @@ export default function SignIn({navigation}) {
             >Sign Up</Text>
           </TouchableOpacity>
         </View>
-      </View>
+      </ScrollView>
     </TouchableWithoutFeedback>
     )
 }

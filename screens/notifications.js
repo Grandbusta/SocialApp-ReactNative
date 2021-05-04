@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, FlatList,Image} from 'react-native';
 import CustomHeader from '../shared/header'
 import { img,img2,img3,img4,img5,img6,img7,img8 } from '../shared/images'
-
+import {ScaledSheet} from 'react-native-size-matters'
 
 export default function Notifications() {
   const data=[
@@ -103,10 +103,10 @@ export default function Notifications() {
     )
 }
 
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
   info:{
     flexDirection:'row',
-    marginHorizontal:20,
+    marginHorizontal:'3%',
     alignItems:'center',
     justifyContent:'space-between',
     marginVertical:10,
@@ -116,11 +116,12 @@ const styles = StyleSheet.create({
   },
   infoImg:{
     borderRadius:50,
-    width:70,
-    height:70
+    width:'60@s',
+    height:'60@s'
   },
   infoText:{
-    fontSize:22,
+    fontSize:'18@s',
+    paddingHorizontal:5,
     width:'60%'
   },
   infoTime:{
