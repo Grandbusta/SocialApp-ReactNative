@@ -11,6 +11,7 @@ export default function Header({title}) {
 
 const styles =  StyleSheet.create({
     box:{
+        paddingTop:10,
         paddingBottom:'2%',
         elevation:1
     },

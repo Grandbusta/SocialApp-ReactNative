@@ -88,12 +88,14 @@ export default function Notifications() {
             renderItem={({item})=>(
               <TouchableOpacity>
                 <View style={styles.info}>
+                  <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between',width:'80%'}}>
                     <Image
                     style={styles.infoImg}
                     source={item.imgUrl}
                     />
                       <Text style={styles.infoText}>{item.text}</Text>
-                      <Text style={styles.intoTime}>{item.time}</Text>
+                  </View>
+                      <Text style={styles.infoTime}>{item.time}</Text>
                 </View>
               </TouchableOpacity>
             )}
@@ -116,13 +118,14 @@ const styles = ScaledSheet.create({
   },
   infoImg:{
     borderRadius:50,
-    width:'60@s',
-    height:'60@s'
+    width:'60@ms',
+    height:'60@ms'
   },
   infoText:{
-    fontSize:'18@s',
-    paddingHorizontal:5,
-    width:'60%'
+    fontSize:'18@ms',
+    paddingLeft:10,
+    paddingRight:5,
+    width:'80%'
   },
   infoTime:{
     color:'grey'

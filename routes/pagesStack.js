@@ -31,14 +31,14 @@ export default function PageStack() {
         })}
         tabBarOptions={{
           activeTintColor:'#1DA1F2',
-          showLabel:false
+          showLabel:true
         }}
       >
         <Tab.Screen name="Feeds" component={Feeds}/>
         <Tab.Screen name="People" component={People} />
         <Tab.Screen name="Notifications" component={Notifications} />
         <Tab.Screen name="Messaging" component={TopTab}/>
-        <Tab.Screen name="Personal Profile" component={PersonalProfile} />
+        <Tab.Screen name="Personal Profile" component={PersonalProfile} options={{tabBarLabel:'Profile'}}/>
       </Tab.Navigator>
   );
 }

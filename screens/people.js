@@ -127,8 +127,8 @@ const styles = ScaledSheet.create({
   },
   infoImg:{
     borderRadius:50,
-    width:'60@s',
-    height:'60@s'
+    width:'60@ms',
+    height:'60@ms'
   },
   infoText:{
     width:'60%',

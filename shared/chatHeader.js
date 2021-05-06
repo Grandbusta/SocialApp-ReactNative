@@ -31,7 +31,8 @@ export default function ChatHeader({navigation,user}) {
 
 const styles =  StyleSheet.create({
     box:{
-        paddingHorizontal:20,
+        paddingTop:10,
+        paddingHorizontal:'2%',
         paddingBottom:15,
         backgroundColor:'#F5F5F5',
         flexDirection:'row',
