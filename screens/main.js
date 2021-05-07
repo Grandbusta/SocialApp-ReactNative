@@ -50,6 +50,7 @@ const styles = ScaledSheet.create({
     marginBottom:'2%'
   },
   title:{
+    color:'black',
     fontSize:'26@ms',
     alignSelf:'center',
     fontWeight:'bold',

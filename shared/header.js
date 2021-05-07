@@ -16,6 +16,7 @@ const styles =  StyleSheet.create({
         elevation:1
     },
     headerText:{
+        color:'black',
         fontSize:26,
         textAlign:'center',
         fontWeight:'bold'

@@ -112,7 +112,7 @@ export default function Chat({navigation,route}) {
 const styles=StyleSheet.create({
   chatView:{
     backgroundColor:'white',
-    flex:1
+    flex:1,
   },
   chatSect:{
     position:'absolute',

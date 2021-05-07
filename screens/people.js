@@ -135,10 +135,12 @@ const styles = ScaledSheet.create({
     paddingHorizontal:5
   },
   username:{
+    color:'black',
     fontSize:'18@ms',
     fontWeight:'bold'
   },
   caption:{
+    color:'black',
     fontSize:'16@ms',
   },
   flbtnFalse:{

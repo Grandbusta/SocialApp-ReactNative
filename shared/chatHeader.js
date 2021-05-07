@@ -51,9 +51,11 @@ const styles =  StyleSheet.create({
       marginLeft:15
     },
     username:{
+      color:'black',
       fontSize:22
     },
     state:{
+      color:'black',
       fontSize:16
     },
     pic:{

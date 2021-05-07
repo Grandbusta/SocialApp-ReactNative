@@ -122,6 +122,7 @@ const styles = ScaledSheet.create({
     height:'60@ms'
   },
   infoText:{
+    color:'black',
     fontSize:'18@ms',
     paddingLeft:10,
     paddingRight:5,

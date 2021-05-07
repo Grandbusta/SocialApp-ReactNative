@@ -7,7 +7,7 @@ import globalStyles from '../shared/globalStyles'
 export default function SignIn({navigation}) {
     return(
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-      <ScrollView contentContainerStyle={{paddingBottom:100,paddingHorizontal:'4%',alignItems:'center',backgroundColor:'white'}}>
+      <ScrollView contentContainerStyle={{paddingBottom:100,paddingHorizontal:'4%',alignItems:'center',backgroundColor:'white',flexGrow:1}}>
 
       <View style={globalStyles.sview}>
         <Text style={globalStyles.stext}>Sign in with just one step</Text>

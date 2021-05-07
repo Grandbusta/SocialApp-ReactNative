@@ -51,19 +51,23 @@ const styles= StyleSheet.create({
         elevation:0.4
     },
     username:{
+        color:'black',
         fontSize:20,
         fontWeight:"bold",
         marginLeft:10,
         marginVertical:20
     },
     captionUsername:{
+        color:'black',
         fontSize:16,
         fontWeight:'bold',
     },
     captionText:{
+        color:'black',
         fontSize:16,
     },
     captionCamp:{
+        color:'black',
         marginLeft:10,
         marginRight:30,
         marginTop:5,
@@ -90,6 +94,7 @@ const styles= StyleSheet.create({
         alignSelf:'center'
     },
     activityinfo:{
+        color:'black',
         marginHorizontal:10,
         marginVertical:10,
         flexDirection:'row',
@@ -105,6 +110,7 @@ const styles= StyleSheet.create({
         marginLeft:20
     },
     likeText:{
+        color:'black',
         fontSize:18,
         marginLeft:4
     }

@@ -173,18 +173,23 @@ const styles = ScaledSheet.create({
       padding:'8@s'
   },
   infoNum:{
+    color:'black',
       fontSize:'18@s',
       textAlign:'center'
   },
   infoType:{
+    color:'black',
       fontSize:'12@s'
   },
   username:{
+      color:'black',
+      marginTop:4,
       fontWeight:'bold',
-      fontSize:28
+      fontSize:'22@ms'
   },
   status:{
-    fontSize:'16@s',
+    color:'black',
+    fontSize:'16@ms',
     marginTop:5,
     paddingRight:30
   },

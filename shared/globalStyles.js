@@ -48,6 +48,7 @@ const globalStyles = ScaledSheet.create({
     marginVertical:'4%'
   },
   stext: {
+    color:'black',
     fontSize:'18@s'
   },
   iconbtn: {

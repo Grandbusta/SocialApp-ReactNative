@@ -147,11 +147,13 @@ const styles = ScaledSheet.create({
     paddingHorizontal:5
   },
   username:{
-    fontSize:'20@ms',
+    color:'black',
+    fontSize:'18@ms',
     fontWeight:'bold'
   },
   caption:{
-    fontSize:'16@ms',
+    color:'black',
+    fontSize:'14@ms',
   },
   infoTime:{
     color:'grey'

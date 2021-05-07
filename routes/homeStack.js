@@ -11,7 +11,7 @@ const Stack = createStackNavigator()
 
 export default function HomeStack() {
   return(
-    <NavigationContainer theme={{...DefaultTheme,colors:{...DefaultTheme.colors,background:'white'}}}>
+    <NavigationContainer>
       <Stack.Navigator
       initialRouteName='Main'
       mode='modal'
